@@ -1,0 +1,30 @@
+:root {
+  --green-1: #84B179;
+  --green-2: #A2CB8B;
+  --green-3: #C7EABB;
+  --green-4: #E8F5BD;
+  --text-dark: #2f3b2f;
+  --white: #ffffff;
+  --danger: #c95757;
+  --border: #d8e8d2;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, var(--green-4) 0%, #f9fff0 100%);
+  color: var(--text-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #386641;
+}
+
+button {
+  cursor: pointer;
+}

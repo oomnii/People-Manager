@@ -1,0 +1,10 @@
+
+> people-manager-frontend@0.0.1 start
+> node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng serve
+
+(node:22684) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:22684) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(node:22684) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+An unhandled exception occurred: No such module: http_parser
+See "C:\Users\om\AppData\Local\Temp\ng-n1ugiF\angular-errors.log" for further details.

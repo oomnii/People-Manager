@@ -1,0 +1,36 @@
+<section class="card">
+  <h2>Edit Person</h2>
+  <p class="subtitle">Update the selected person and save changes.</p>
+
+  <p *ngIf="loading" class="state-text">Loading person details...</p>
+  <p *ngIf="error" class="error-text">{{ error }}</p>
+
+  <form *ngIf="!loading" #personForm="ngForm" (ngSubmit)="updatePerson()" class="form-grid">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" [(ngModel)]="person.firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" [(ngModel)]="person.lastName" required />
+    </div>
+
+    <div class="form-group full-width">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" [(ngModel)]="person.email" required />
+    </div>
+
+    <div class="form-group full-width">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" [(ngModel)]="person.phone" required />
+    </div>
+
+    <div class="button-row full-width">
+      <button class="primary-btn" type="submit" [disabled]="personForm.invalid || saving">
+        {{ saving ? 'Saving...' : 'Save Changes' }}
+      </button>
+      <button class="secondary-btn" type="button" (click)="goBack()">Cancel</button>
+    </div>
+  </form>
+</section>

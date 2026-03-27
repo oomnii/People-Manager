@@ -1,0 +1,9 @@
+/node_modules
+/dist
+/tmp
+/out-tsc
+/.idea
+/.vscode
+npm-debug.log
+yarn-error.log
+/testem.log

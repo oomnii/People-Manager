@@ -1,0 +1,25 @@
+<section class="card">
+  <h2>Delete Person</h2>
+  <p class="subtitle">Review details before permanently deleting the person.</p>
+
+  <p *ngIf="loading" class="state-text">Loading person...</p>
+  <p *ngIf="error" class="error-text">{{ error }}</p>
+
+  <div *ngIf="!loading" class="warning-box">
+    <p class="warning-title">Are you sure you want to delete this person?</p>
+
+    <div class="details-grid">
+      <div><strong>ID:</strong> {{ person.id }}</div>
+      <div><strong>Name:</strong> {{ person.firstName }} {{ person.lastName }}</div>
+      <div><strong>Email:</strong> {{ person.email }}</div>
+      <div><strong>Phone:</strong> {{ person.phone }}</div>
+    </div>
+
+    <div class="button-row">
+      <button class="danger-btn" (click)="confirmDelete()" [disabled]="deleting">
+        {{ deleting ? 'Deleting...' : 'Yes, Delete' }}
+      </button>
+      <button class="secondary-btn" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</section>

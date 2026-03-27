@@ -1,0 +1,17 @@
+<div class="page-shell">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Angular 8 + Node.js + MySQL</p>
+      <h1>{{ title }}</h1>
+      <p class="hero-text">A simple single page application to manage a list of people.</p>
+    </div>
+    <nav class="nav-links">
+      <a routerLink="/people" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">People List</a>
+      <a routerLink="/people/create" routerLinkActive="active">Create Person</a>
+    </nav>
+  </header>
+
+  <main class="content-area">
+    <router-outlet></router-outlet>
+  </main>
+</div>
