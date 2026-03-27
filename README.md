@@ -27,10 +27,18 @@ people-manager-full/
 ```
 
 ---
-## ScreenShots:
-![Home Page](images/3.png)
-![Create List](images/2.png)
-![DataBase](images/1.png)
+## Screenshots
+
+### Home Page
+<img src="images/3.png" alt="Home Page" width="700"/>
+
+### Create Page
+<img src="images/2.png" alt="Create Page" width="700"/>
+
+### Data Base
+<img src="images/1.png" alt="DataBase" width="700"/>
+
+
 ## 🚀 Step-by-Step Setup Guide (Windows / XAMPP)
 
 Follow these instructions exactly to get the project working locally without any configuration headaches.
